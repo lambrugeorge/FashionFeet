@@ -1,8 +1,8 @@
 import React from 'react'
 import './Nav.css'
 import {FiHeart} from 'react-icons/fi';
-import {AiOutlineShoppingCart, AiOutlineUerAdd} from 'react-icons/ai';
-import { MdOutlineShoppingCart } from "react-icons/md";
+import {AiOutlineShoppingCart, AiOutlineUserAdd} from 'react-icons/ai';
+import { MidOutlineShoppingCart } from "react-icons/md";
 
 
 function Nav() {
@@ -25,7 +25,8 @@ function Nav() {
        </a>
 
        <a href='#'>
-       <AiOutlineUerAdd className="nav-icons"/>
+       <AiOutlineUserAdd className="nav-icons"/>
+
        </a>
        </div>
    </nav>   
