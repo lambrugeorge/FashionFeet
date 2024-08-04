@@ -3,7 +3,7 @@
 Welcome to the **E-commerce Product Showcase**! This project is a modern React-based application that displays various products and allows users to filter them based on different criteria. It showcases the power of React for building interactive user interfaces.
 
 ## 🚀 Live Demo
-
+![Fashionfeed](1.png)
 Check out the live site [here](https://fashionfeet2.netlify.app/).
 
 ## 🛠️ Technologies Used
