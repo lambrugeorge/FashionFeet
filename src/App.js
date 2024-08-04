@@ -50,27 +50,28 @@ function App() {
       );
     }
     return filteredProducts.map(
-      ({img, title, star, reviews, newPrice, prevPrice}) => {
-      <Card 
-      key={Math.random()}
-      img = {img}
-      title = {title}
-      star = {star}
-      reviews = {reviews}
-      newPrice = {newPrice}
-      prevPrice = {prevPrice}
-      />
-    })
+      ({ img, title, star, reviews, newPrice, prevPrice }) => (
+        <Card 
+          key={title}  // Use a unique key
+          img={img}
+          title={title}
+          star={star}
+          reviews={reviews}
+          newPrice={newPrice}
+          prevPrice={prevPrice}
+        />
+      )
+    );
   }
 
 const result = filteredData(products, selectedCategory, query)
   
   return (
   <>
-  <Sidebar handleChange = {handleChange} />
-  <Navigation query = {query} handleInputChange={handleInputChange} />
+  <Sidebar handleChange={handleChange} />
+  <Navigation query= {query} handleInputChange={handleInputChange} />
   <Recommended handleClick={handleClick}/>
-  <Products />
+  <Products result={result} />
   </>
   )
 }
